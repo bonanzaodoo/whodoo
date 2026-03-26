@@ -1,0 +1,437 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+</head>
+<body style="margin: 0; padding: 0; -webkit-font-smoothing: antialiased;">
+
+<!-- ============ HERO / HEADER ============ -->
+<section class="oe_container" style="padding: 0; margin-bottom: 0;">
+    <div class="oe_row" style="
+        background: linear-gradient(160deg, #0A3249 0%, #0C4B6E 35%, #1A7FA8 70%, #2CB5C8 100%);
+        padding: 80px 30px 70px 30px;
+        text-align: center;
+        color: #ffffff;
+        position: relative;
+        overflow: hidden;
+    ">
+        <!-- Decorative circles -->
+        <div style="position:absolute; top:-80px; right:-50px; width:260px; height:260px; background:rgba(44,181,200,0.1); border-radius:50%;"></div>
+        <div style="position:absolute; bottom:-60px; left:-30px; width:180px; height:180px; background:rgba(255,255,255,0.04); border-radius:50%;"></div>
+        <div style="position:absolute; top:40%; left:8%; width:6px; height:6px; background:rgba(44,181,200,0.35); border-radius:50%;"></div>
+        <div style="position:absolute; top:25%; right:12%; width:4px; height:4px; background:rgba(255,255,255,0.2); border-radius:50%;"></div>
+
+        <div style="
+            display: inline-block;
+            width: 72px; height: 72px; line-height: 72px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 18px;
+            font-size: 36px;
+            margin-bottom: 24px;
+        ">&#128202;</div>
+        <h1 style="
+            font-size: 36px;
+            font-weight: 800;
+            margin: 0 0 16px 0;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        ">An&#225;lisis de Etapas<br style="display:block;"/>de Mesa de Ayuda</h1>
+        <p style="
+            font-size: 16px;
+            font-weight: 300;
+            margin: 0 auto 28px auto;
+            max-width: 560px;
+            line-height: 1.8;
+            color: #d4eef5;
+            letter-spacing: 0.2px;
+        ">Rastree, analice y reporte el tiempo invertido en cada etapa de los tickets de soporte. Asignaci&#243;n autom&#225;tica de usuarios y exportaci&#243;n a Excel.</p>
+        <div style="display: inline-flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+            <span style="
+                background: rgba(255,255,255,0.08);
+                border: 1px solid rgba(255,255,255,0.18);
+                padding: 5px 14px;
+                border-radius: 20px;
+                font-size: 12px;
+                color: rgba(255,255,255,0.85);
+                font-weight: 500;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+            ">Odoo 17</span>
+            <span style="
+                background: rgba(255,255,255,0.08);
+                border: 1px solid rgba(255,255,255,0.18);
+                padding: 5px 14px;
+                border-radius: 20px;
+                font-size: 12px;
+                color: rgba(255,255,255,0.85);
+                font-weight: 500;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+            ">LGPL-3</span>
+            <span style="
+                background: rgba(255,255,255,0.08);
+                border: 1px solid rgba(255,255,255,0.18);
+                padding: 5px 14px;
+                border-radius: 20px;
+                font-size: 12px;
+                color: rgba(255,255,255,0.85);
+                font-weight: 500;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+            ">v17.0.2.0.0</span>
+        </div>
+    </div>
+</section>
+
+<!-- ============ &#191;POR QU&#201; ESTE M&#211;DULO? ============ -->
+<section class="oe_container oe_spaced" style="padding: 56px 20px;">
+    <div class="oe_row" style="max-width: 780px; margin: 0 auto;">
+        <div style="text-align: center; margin-bottom: 32px;">
+            <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2CB5C8; font-weight: 600; margin: 0 0 8px 0;">Contexto</p>
+            <h2 style="font-size: 28px; font-weight: 700; color: #0C4B6E; margin: 0; line-height: 1.3;">&#191;Por qu&#233; este m&#243;dulo?</h2>
+        </div>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+            <div style="
+                flex: 1; min-width: 280px;
+                background: #ffffff;
+                border-radius: 12px;
+                padding: 26px 24px;
+                border-left: 3px solid #e74c3c;
+                box-shadow: 0 2px 12px rgba(12,75,110,0.06);
+            ">
+                <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: #e74c3c; font-weight: 600; margin: 0 0 10px 0;">El problema</p>
+                <p style="font-size: 14px; color: #444; line-height: 1.75; margin: 0;">
+                    En el m&#243;dulo de Mesa de Ayuda de Odoo no existe una forma nativa de saber <strong style="color: #0C4B6E;">cu&#225;nto tiempo permanece cada ticket en cada etapa</strong>. Esto dificulta la identificaci&#243;n de cuellos de botella y la medici&#243;n del rendimiento del equipo.
+                </p>
+            </div>
+            <div style="
+                flex: 1; min-width: 280px;
+                background: #ffffff;
+                border-radius: 12px;
+                padding: 26px 24px;
+                border-left: 3px solid #2CB5C8;
+                box-shadow: 0 2px 12px rgba(12,75,110,0.06);
+            ">
+                <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: #2CB5C8; font-weight: 600; margin: 0 0 10px 0;">La soluci&#243;n</p>
+                <p style="font-size: 14px; color: #444; line-height: 1.75; margin: 0;">
+                    Registra autom&#225;ticamente cada transici&#243;n de etapa con fechas y duraciones, <strong style="color: #0C4B6E;">asigna usuarios seg&#250;n la etapa</strong>, y genera reportes Excel detallados con filtros por equipo, fechas y etapas.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ FUNCIONALIDADES PRINCIPALES ============ -->
+<section class="oe_container oe_dark oe_spaced" style="padding: 56px 20px;">
+    <div class="oe_row" style="text-align: center; margin-bottom: 40px;">
+        <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2CB5C8; font-weight: 600; margin: 0 0 8px 0;">Capacidades</p>
+        <h2 style="font-size: 28px; font-weight: 700; color: #0C4B6E; margin: 0;">Funcionalidades Principales</h2>
+    </div>
+    <div class="oe_row" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 920px; margin: 0 auto;">
+
+        <div style="
+            flex: 1 1 250px; max-width: 280px;
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 32px 24px 28px 24px;
+            box-shadow: 0 4px 24px rgba(12, 75, 110, 0.07);
+            text-align: left;
+            position: relative;
+            border-top: none;
+        ">
+            <div style="
+                width: 44px; height: 44px; line-height: 44px;
+                background: linear-gradient(135deg, #2CB5C8, #1A7FA8);
+                border-radius: 12px;
+                text-align: center;
+                font-size: 22px;
+                margin-bottom: 18px;
+            ">&#9201;</div>
+            <h4 style="font-size: 16px; font-weight: 700; color: #0A3249; margin: 0 0 10px 0; line-height: 1.3;">Seguimiento de Tiempo por Etapa</h4>
+            <p style="font-size: 13px; color: #666; line-height: 1.7; margin: 0;">
+                Registra cada transici&#243;n entre etapas con <strong>fecha de inicio, fin y duraci&#243;n</strong>. Soporta movimientos de ida y vuelta. Historial completo en cada ticket.
+            </p>
+        </div>
+
+        <div style="
+            flex: 1 1 250px; max-width: 280px;
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 32px 24px 28px 24px;
+            box-shadow: 0 4px 24px rgba(12, 75, 110, 0.07);
+            text-align: left;
+            position: relative;
+        ">
+            <div style="
+                width: 44px; height: 44px; line-height: 44px;
+                background: linear-gradient(135deg, #1A7FA8, #0C4B6E);
+                border-radius: 12px;
+                text-align: center;
+                font-size: 22px;
+                margin-bottom: 18px;
+            ">&#128100;</div>
+            <h4 style="font-size: 16px; font-weight: 700; color: #0A3249; margin: 0 0 10px 0; line-height: 1.3;">Asignaci&#243;n Autom&#225;tica de Usuario</h4>
+            <p style="font-size: 13px; color: #666; line-height: 1.7; margin: 0;">
+                Configure un <strong>usuario predeterminado</strong> para cada etapa. Al mover el ticket, el sistema reasigna autom&#225;ticamente al responsable.
+            </p>
+        </div>
+
+        <div style="
+            flex: 1 1 250px; max-width: 280px;
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 32px 24px 28px 24px;
+            box-shadow: 0 4px 24px rgba(12, 75, 110, 0.07);
+            text-align: left;
+            position: relative;
+        ">
+            <div style="
+                width: 44px; height: 44px; line-height: 44px;
+                background: linear-gradient(135deg, #0C4B6E, #0A3249);
+                border-radius: 12px;
+                text-align: center;
+                font-size: 22px;
+                margin-bottom: 18px;
+            ">&#128200;</div>
+            <h4 style="font-size: 16px; font-weight: 700; color: #0A3249; margin: 0 0 10px 0; line-height: 1.3;">Reporte Excel de An&#225;lisis</h4>
+            <p style="font-size: 13px; color: #666; line-height: 1.7; margin: 0;">
+                Genera reportes XLSX con <strong>filtros por equipo, fechas y etapas</strong>. Columnas din&#225;micas, tiempos consolidados y zona horaria local.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ============ CONFIGURACI&#211;N ============ -->
+<section class="oe_container oe_spaced" style="padding: 56px 20px;">
+    <div class="oe_row" style="text-align: center; margin-bottom: 40px;">
+        <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2CB5C8; font-weight: 600; margin: 0 0 8px 0;">Puesta en marcha</p>
+        <h2 style="font-size: 28px; font-weight: 700; color: #0C4B6E; margin: 0 0 6px 0;">Configuraci&#243;n</h2>
+        <p style="font-size: 14px; color: #888; margin: 0;">Siga estos pasos despu&#233;s de instalar el m&#243;dulo.</p>
+    </div>
+    <div class="oe_row" style="max-width: 680px; margin: 0 auto;">
+
+        <!-- Step 1 -->
+        <div style="display: flex; align-items: flex-start; margin-bottom: 0; position: relative;">
+            <div style="display: flex; flex-direction: column; align-items: center; margin-right: 22px; flex-shrink: 0;">
+                <div style="
+                    width: 42px; height: 42px; line-height: 42px;
+                    background: #0C4B6E; color: #ffffff;
+                    border-radius: 50%; text-align: center;
+                    font-size: 16px; font-weight: 700;
+                ">1</div>
+                <div style="width: 2px; height: 32px; background: linear-gradient(to bottom, #0C4B6E, #e0eff5); margin-top: 4px;"></div>
+            </div>
+            <div style="background: #ffffff; border: 1px solid #e0eff5; border-radius: 12px; padding: 20px 24px; flex: 1; box-shadow: 0 2px 10px rgba(12,75,110,0.04); margin-bottom: 12px;">
+                <h4 style="font-size: 15px; font-weight: 700; color: #0A3249; margin: 0 0 8px 0;">Configurar asignaci&#243;n autom&#225;tica en etapas</h4>
+                <p style="font-size: 13px; color: #555; margin: 0; line-height: 1.7;">Vaya a <strong>Mesa de Ayuda &#8594; Configuraci&#243;n &#8594; Etapas</strong>. Abra cada etapa y configure el campo <strong>&#34;Usuario de Asignaci&#243;n Autom&#225;tica&#34;</strong>. Ejemplo: asignar al Jefe de Departamento en la etapa &#34;Tickets Nuevos&#34;.</p>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div style="display: flex; align-items: flex-start; margin-bottom: 0; position: relative;">
+            <div style="display: flex; flex-direction: column; align-items: center; margin-right: 22px; flex-shrink: 0;">
+                <div style="
+                    width: 42px; height: 42px; line-height: 42px;
+                    background: #1A7FA8; color: #ffffff;
+                    border-radius: 50%; text-align: center;
+                    font-size: 16px; font-weight: 700;
+                ">2</div>
+                <div style="width: 2px; height: 32px; background: linear-gradient(to bottom, #1A7FA8, #e0eff5); margin-top: 4px;"></div>
+            </div>
+            <div style="background: #ffffff; border: 1px solid #e0eff5; border-radius: 12px; padding: 20px 24px; flex: 1; box-shadow: 0 2px 10px rgba(12,75,110,0.04); margin-bottom: 12px;">
+                <h4 style="font-size: 15px; font-weight: 700; color: #0A3249; margin: 0 0 8px 0;">Seleccionar etapas visibles en el reporte</h4>
+                <p style="font-size: 13px; color: #555; margin: 0; line-height: 1.7;">En cada etapa encontrar&#225; el campo <strong>&#34;Mostrar en Reporte&#34;</strong> (activado por defecto). Desmarque las etapas que no necesite como columna en el reporte Excel.</p>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div style="display: flex; align-items: flex-start;">
+            <div style="display: flex; flex-direction: column; align-items: center; margin-right: 22px; flex-shrink: 0;">
+                <div style="
+                    width: 42px; height: 42px; line-height: 42px;
+                    background: #2CB5C8; color: #ffffff;
+                    border-radius: 50%; text-align: center;
+                    font-size: 16px; font-weight: 700;
+                ">3</div>
+            </div>
+            <div style="background: #ffffff; border: 1px solid #e0eff5; border-radius: 12px; padding: 20px 24px; flex: 1; box-shadow: 0 2px 10px rgba(12,75,110,0.04);">
+                <h4 style="font-size: 15px; font-weight: 700; color: #0A3249; margin: 0 0 8px 0;">Verificar zona horaria del usuario</h4>
+                <p style="font-size: 13px; color: #555; margin: 0; line-height: 1.7;">Aseg&#250;rese de que los usuarios tengan su <strong>zona horaria configurada</strong> en Preferencias. El reporte convierte las fechas autom&#225;ticamente seg&#250;n el perfil del usuario.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ============ FLUJOS / ESCENARIOS ============ -->
+<section class="oe_container oe_dark oe_spaced" style="padding: 56px 20px;">
+    <div class="oe_row" style="text-align: center; margin-bottom: 40px;">
+        <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2CB5C8; font-weight: 600; margin: 0 0 8px 0;">Casos de uso</p>
+        <h2 style="font-size: 28px; font-weight: 700; color: #0C4B6E; margin: 0;">Flujos y Escenarios</h2>
+    </div>
+    <div class="oe_row" style="max-width: 780px; margin: 0 auto;">
+
+        <!-- ESCENARIO 1 -->
+        <div style="background: #ffffff; border-radius: 14px; padding: 0; margin-bottom: 20px; box-shadow: 0 3px 18px rgba(12,75,110,0.06); overflow: hidden;">
+            <div style="background: linear-gradient(135deg, #0A3249, #0C4B6E); padding: 18px 28px; display: flex; align-items: center; gap: 12px;">
+                <span style="font-size: 22px;">&#127915;</span>
+                <div>
+                    <h3 style="font-size: 16px; font-weight: 700; color: #ffffff; margin: 0;">Ciclo de vida completo de un ticket</h3>
+                    <p style="font-size: 12px; color: #8bb8cc; margin: 2px 0 0 0;">Seguimiento autom&#225;tico desde la creaci&#243;n hasta la resoluci&#243;n</p>
+                </div>
+            </div>
+            <div style="padding: 24px 28px;">
+                <div style="display: flex; align-items: flex-start; margin-bottom: 16px;">
+                    <span style="min-width: 24px; height: 24px; line-height: 24px; background: #e6f4f9; color: #1A7FA8; border-radius: 6px; text-align: center; font-size: 11px; font-weight: 700; margin-right: 14px; flex-shrink: 0;">01</span>
+                    <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.65;">Llega un nuevo ticket &#8594; se asigna autom&#225;ticamente al <strong>Jefe de Departamento</strong> (etapa &#34;Tickets Nuevos&#34;).</p>
+                </div>
+                <div style="display: flex; align-items: flex-start; margin-bottom: 16px;">
+                    <span style="min-width: 24px; height: 24px; line-height: 24px; background: #e6f4f9; color: #1A7FA8; border-radius: 6px; text-align: center; font-size: 11px; font-weight: 700; margin-right: 14px; flex-shrink: 0;">02</span>
+                    <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.65;">El jefe revisa y mueve a &#34;Trabajo en Revisi&#243;n&#34; &#8594; se reasigna al <strong>T&#233;cnico</strong>. Se cierra el tracking anterior y se abre uno nuevo.</p>
+                </div>
+                <div style="display: flex; align-items: flex-start; margin-bottom: 16px;">
+                    <span style="min-width: 24px; height: 24px; line-height: 24px; background: #e6f4f9; color: #1A7FA8; border-radius: 6px; text-align: center; font-size: 11px; font-weight: 700; margin-right: 14px; flex-shrink: 0;">03</span>
+                    <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.65;">Si necesita materiales &#8594; &#34;Solicitud de Cotizaci&#243;n&#34; (<strong>Jefe de Bodega</strong>) &#8594; &#34;Esperando Aprobaci&#243;n&#34; (<strong>Gerente de Operaciones</strong>).</p>
+                </div>
+                <div style="display: flex; align-items: flex-start; margin-bottom: 16px;">
+                    <span style="min-width: 24px; height: 24px; line-height: 24px; background: #e6f4f9; color: #1A7FA8; border-radius: 6px; text-align: center; font-size: 11px; font-weight: 700; margin-right: 14px; flex-shrink: 0;">04</span>
+                    <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.65;">Aprobado &#8594; regresa al Jefe de Departamento para ejecuci&#243;n &#8594; se completa en &#34;Hecho&#34;.</p>
+                </div>
+                <div style="display: flex; align-items: flex-start;">
+                    <span style="min-width: 24px; height: 24px; line-height: 24px; background: #e6f4f9; color: #1A7FA8; border-radius: 6px; text-align: center; font-size: 11px; font-weight: 700; margin-right: 14px; flex-shrink: 0;">05</span>
+                    <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.65;">En la pesta&#241;a <strong>&#34;Seguimiento de Etapas&#34;</strong> del ticket consulte el historial completo con tiempos exactos por transici&#243;n.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ESCENARIO 2 -->
+        <div style="background: #ffffff; border-radius: 14px; padding: 0; margin-bottom: 20px; box-shadow: 0 3px 18px rgba(12,75,110,0.06); overflow: hidden;">
+            <div style="background: linear-gradient(135deg, #0C4B6E, #1A7FA8); padding: 18px 28px; display: flex; align-items: center; gap: 12px;">
+                <span style="font-size: 22px;">&#128202;</span>
+                <div>
+                    <h3 style="font-size: 16px; font-weight: 700; color: #ffffff; margin: 0;">Generar reporte mensual de rendimiento</h3>
+                    <p style="font-size: 12px; color: #b0d8e8; margin: 2px 0 0 0;">Obtenga un an&#225;lisis completo del equipo de soporte</p>
+                </div>
+            </div>
+            <div style="padding: 24px 28px;">
+                <div style="display: flex; align-items: flex-start; margin-bottom: 16px;">
+                    <span style="min-width: 24px; height: 24px; line-height: 24px; background: #e6f4f9; color: #1A7FA8; border-radius: 6px; text-align: center; font-size: 11px; font-weight: 700; margin-right: 14px; flex-shrink: 0;">01</span>
+                    <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.65;">Vaya a <strong>Mesa de Ayuda &#8594; Reportes &#8594; An&#225;lisis de Etapas</strong>.</p>
+                </div>
+                <div style="display: flex; align-items: flex-start; margin-bottom: 16px;">
+                    <span style="min-width: 24px; height: 24px; line-height: 24px; background: #e6f4f9; color: #1A7FA8; border-radius: 6px; text-align: center; font-size: 11px; font-weight: 700; margin-right: 14px; flex-shrink: 0;">02</span>
+                    <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.65;">Seleccione el <strong>rango de fechas</strong> del mes que desea analizar.</p>
+                </div>
+                <div style="display: flex; align-items: flex-start; margin-bottom: 16px;">
+                    <span style="min-width: 24px; height: 24px; line-height: 24px; background: #e6f4f9; color: #1A7FA8; border-radius: 6px; text-align: center; font-size: 11px; font-weight: 700; margin-right: 14px; flex-shrink: 0;">03</span>
+                    <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.65;">Opcionalmente filtre por <strong>equipo de mesa de ayuda</strong> y/o <strong>etapas espec&#237;ficas</strong>.</p>
+                </div>
+                <div style="display: flex; align-items: flex-start; margin-bottom: 16px;">
+                    <span style="min-width: 24px; height: 24px; line-height: 24px; background: #e6f4f9; color: #1A7FA8; border-radius: 6px; text-align: center; font-size: 11px; font-weight: 700; margin-right: 14px; flex-shrink: 0;">04</span>
+                    <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.65;">Haga clic en <strong>&#34;Generar Reporte&#34;</strong> para descargar el archivo Excel.</p>
+                </div>
+                <div style="display: flex; align-items: flex-start;">
+                    <span style="min-width: 24px; height: 24px; line-height: 24px; background: #e6f4f9; color: #1A7FA8; border-radius: 6px; text-align: center; font-size: 11px; font-weight: 700; margin-right: 14px; flex-shrink: 0;">05</span>
+                    <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.65;">El reporte incluye: ID del ticket, asunto, fecha de creaci&#243;n, <strong>tiempo por cada etapa</strong> (columnas din&#225;micas), fecha de cierre, tiempo total y etapa actual.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ESCENARIO 3 -->
+        <div style="background: #ffffff; border-radius: 14px; padding: 0; box-shadow: 0 3px 18px rgba(12,75,110,0.06); overflow: hidden;">
+            <div style="background: linear-gradient(135deg, #1A7FA8, #2CB5C8); padding: 18px 28px; display: flex; align-items: center; gap: 12px;">
+                <span style="font-size: 22px;">&#128269;</span>
+                <div>
+                    <h3 style="font-size: 16px; font-weight: 700; color: #ffffff; margin: 0;">Identificar cuellos de botella</h3>
+                    <p style="font-size: 12px; color: #d4eef5; margin: 2px 0 0 0;">Detecte d&#243;nde se estancan los tickets</p>
+                </div>
+            </div>
+            <div style="padding: 24px 28px;">
+                <div style="display: flex; align-items: flex-start; margin-bottom: 16px;">
+                    <span style="min-width: 24px; height: 24px; line-height: 24px; background: #e6f4f9; color: #1A7FA8; border-radius: 6px; text-align: center; font-size: 11px; font-weight: 700; margin-right: 14px; flex-shrink: 0;">01</span>
+                    <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.65;">Genere un reporte de an&#225;lisis del per&#237;odo deseado.</p>
+                </div>
+                <div style="display: flex; align-items: flex-start; margin-bottom: 16px;">
+                    <span style="min-width: 24px; height: 24px; line-height: 24px; background: #e6f4f9; color: #1A7FA8; border-radius: 6px; text-align: center; font-size: 11px; font-weight: 700; margin-right: 14px; flex-shrink: 0;">02</span>
+                    <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.65;">En Excel, compare las columnas de <strong>tiempo por etapa</strong>. Tiempos consistentemente altos indican cuellos de botella.</p>
+                </div>
+                <div style="display: flex; align-items: flex-start;">
+                    <span style="min-width: 24px; height: 24px; line-height: 24px; background: #e6f4f9; color: #1A7FA8; border-radius: 6px; text-align: center; font-size: 11px; font-weight: 700; margin-right: 14px; flex-shrink: 0;">03</span>
+                    <p style="font-size: 14px; color: #555; margin: 0; line-height: 1.65;">Tome acciones: reasignar personal, ajustar procesos de aprobaci&#243;n o redistribuir carga de trabajo seg&#250;n los datos.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ============ DETALLES T&#201;CNICOS ============ -->
+<section class="oe_container oe_spaced" style="padding: 56px 20px;">
+    <div class="oe_row" style="text-align: center; margin-bottom: 40px;">
+        <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2CB5C8; font-weight: 600; margin: 0 0 8px 0;">Especificaciones</p>
+        <h2 style="font-size: 28px; font-weight: 700; color: #0C4B6E; margin: 0;">Detalles T&#233;cnicos</h2>
+    </div>
+    <div class="oe_row" style="max-width: 600px; margin: 0 auto;">
+        <table style="
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            font-size: 14px;
+            background: #ffffff;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(12, 75, 110, 0.06);
+        ">
+            <tr style="background: linear-gradient(135deg, #0C4B6E, #1A7FA8); color: #ffffff;">
+                <th style="padding: 16px 24px; text-align: left; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; width: 40%;">Propiedad</th>
+                <th style="padding: 16px 24px; text-align: left; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Valor</th>
+            </tr>
+            <tr>
+                <td style="padding: 14px 24px; border-bottom: 1px solid #eef5f8; color: #0A3249; font-weight: 600; font-size: 13px;">Versi&#243;n</td>
+                <td style="padding: 14px 24px; border-bottom: 1px solid #eef5f8; color: #555; font-size: 13px;">17.0.2.0.0</td>
+            </tr>
+            <tr style="background: #fafcfd;">
+                <td style="padding: 14px 24px; border-bottom: 1px solid #eef5f8; color: #0A3249; font-weight: 600; font-size: 13px;">Licencia</td>
+                <td style="padding: 14px 24px; border-bottom: 1px solid #eef5f8; color: #555; font-size: 13px;">LGPL-3</td>
+            </tr>
+            <tr>
+                <td style="padding: 14px 24px; border-bottom: 1px solid #eef5f8; color: #0A3249; font-weight: 600; font-size: 13px;">Dependencias</td>
+                <td style="padding: 14px 24px; border-bottom: 1px solid #eef5f8; color: #555; font-size: 13px;">helpdesk, report_xlsx (OCA)</td>
+            </tr>
+            <tr style="background: #fafcfd;">
+                <td style="padding: 14px 24px; border-bottom: 1px solid #eef5f8; color: #0A3249; font-weight: 600; font-size: 13px;">Modelo nuevo</td>
+                <td style="padding: 14px 24px; border-bottom: 1px solid #eef5f8; color: #555; font-size: 13px;">helpdesk.stage.tracking</td>
+            </tr>
+            <tr>
+                <td style="padding: 14px 24px; border-bottom: 1px solid #eef5f8; color: #0A3249; font-weight: 600; font-size: 13px;">Modelos modificados</td>
+                <td style="padding: 14px 24px; border-bottom: 1px solid #eef5f8; color: #555; font-size: 13px;">helpdesk.ticket, helpdesk.stage</td>
+            </tr>
+            <tr style="background: #fafcfd;">
+                <td style="padding: 14px 24px; border-bottom: 1px solid #eef5f8; color: #0A3249; font-weight: 600; font-size: 13px;">Formato de reporte</td>
+                <td style="padding: 14px 24px; border-bottom: 1px solid #eef5f8; color: #555; font-size: 13px;">XLSX (Excel)</td>
+            </tr>
+            <tr>
+                <td style="padding: 14px 24px; color: #0A3249; font-weight: 600; font-size: 13px;">Zona horaria</td>
+                <td style="padding: 14px 24px; color: #555; font-size: 13px;">Autom&#225;tica seg&#250;n preferencias del usuario</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<section class="oe_container" style="padding: 0;">
+    <div class="oe_row" style="
+        background: #0A3249;
+        padding: 28px 30px;
+        text-align: center;
+        color: #8bb8cc;
+    ">
+        <p style="font-size: 14px; margin: 0 0 4px 0; color: #a0cfe0;">Desarrollado por <strong style="color: #ffffff;">Marco Mandujano</strong></p>
+        <p style="font-size: 12px; margin: 0; color: #6a9bb0;">v17.0.2.0.0 &#8226; LGPL-3</p>
+    </div>
+</section>
+
+</body>
+</html>

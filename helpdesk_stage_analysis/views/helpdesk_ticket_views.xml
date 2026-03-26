@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="helpdesk_stage_analysis_ticket_view_form" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.form.inherit.stage.analysis</field>
+        <field name="model">helpdesk.ticket</field>
+        <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form"/>
+        <field name="arch" type="xml">
+            <!-- Add Stage Tracking page after the extra_info page in notebook -->
+            <xpath expr="//page[@name='extra_info']" position="after">
+                <page string="Stage Tracking" name="stage_tracking">
+                    <field name="stage_tracking_ids" readonly="1">
+                        <tree string="Stage Tracking" editable="bottom" create="0" delete="0">
+                            <field name="stage_id"/>
+                            <field name="start_date"/>
+                            <field name="end_date"/>
+                            <field name="duration" widget="float_time" sum="Total"/>
+                        </tree>
+                    </field>
+                    <group>
+                        <group>
+                            <field name="total_resolution_time" widget="float_time"/>
+                        </group>
+                        <group>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

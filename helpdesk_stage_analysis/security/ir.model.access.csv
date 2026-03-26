@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_helpdesk_stage_tracking_manager,helpdesk.stage.tracking.manager,model_helpdesk_stage_tracking,,1,1,1,1
+access_helpdesk_stage_analysis_wizard_user,helpdesk.stage.analysis.wizard.user,model_helpdesk_stage_analysis_wizard,,1,1,1,1

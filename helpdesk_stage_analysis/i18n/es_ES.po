@@ -1,0 +1,279 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* helpdesk_stage_analysis
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e-20250629\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-25 18:43+0000\n"
+"PO-Revision-Date: 2026-03-25 18:43+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_stage__auto_user_id
+msgid "Auto Assign User"
+msgstr "Usuario de Asignación Automática"
+
+#. module: helpdesk_stage_analysis
+#: model_terms:ir.ui.view,arch_db:helpdesk_stage_analysis.stage_analysis_wizard_view_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: helpdesk_stage_analysis
+#. odoo-python
+#: code:addons/helpdesk_stage_analysis/report/report_stage_analysis_xlsx.py:0
+#, python-format
+msgid "Close Date/Time"
+msgstr "Fecha/Hora de Cierre"
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_stage_analysis_wizard__create_uid
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_stage_tracking__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_stage_analysis_wizard__create_date
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_stage_tracking__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: helpdesk_stage_analysis
+#. odoo-python
+#: code:addons/helpdesk_stage_analysis/report/report_stage_analysis_xlsx.py:0
+#, python-format
+msgid "Creation Date/Time"
+msgstr "Fecha/Hora de Creación"
+
+#. module: helpdesk_stage_analysis
+#. odoo-python
+#: code:addons/helpdesk_stage_analysis/report/report_stage_analysis_xlsx.py:0
+#, python-format
+msgid "Current Stage"
+msgstr "Etapa Actual"
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_stage_analysis_wizard__date_from
+msgid "Date From"
+msgstr "Fecha Desde"
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_stage_analysis_wizard__date_to
+msgid "Date To"
+msgstr "Fecha Hasta"
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_stage_analysis_wizard__display_name
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_stage_tracking__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_stage_tracking__duration
+msgid "Duration (Hours)"
+msgstr "Duración (Horas)"
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_stage_tracking__end_date
+msgid "End Date"
+msgstr "Fecha de Fin"
+
+#. module: helpdesk_stage_analysis
+#: model_terms:ir.ui.view,arch_db:helpdesk_stage_analysis.stage_analysis_wizard_view_form
+msgid "Generate Report"
+msgstr "Generar Informe"
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model,name:helpdesk_stage_analysis.model_helpdesk_stage
+msgid "Helpdesk Stage"
+msgstr "Etapa de soporte al cliente"
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model,name:helpdesk_stage_analysis.model_helpdesk_stage_tracking
+msgid "Helpdesk Stage Tracking"
+msgstr "Seguimiento de Etapas de Mesa de Ayuda"
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_stage_analysis_wizard__team_ids
+msgid "Helpdesk Teams"
+msgstr "Equipos de Mesa de Ayuda"
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model,name:helpdesk_stage_analysis.model_helpdesk_ticket
+msgid "Helpdesk Ticket"
+msgstr "Ticket de soporte al cliente"
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_stage_analysis_wizard__id
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_stage_tracking__id
+msgid "ID"
+msgstr "ID"
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_stage_analysis_wizard__write_uid
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_stage_tracking__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_stage_analysis_wizard__write_date
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_stage_tracking__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: helpdesk_stage_analysis
+#. odoo-python
+#: code:addons/helpdesk_stage_analysis/wizard/stage_analysis_wizard.py:0
+#, python-format
+msgid "No tickets found for the selected criteria."
+msgstr "No se encontraron tickets para los criterios seleccionados."
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model.fields,help:helpdesk_stage_analysis.field_helpdesk_stage_analysis_wizard__stage_ids
+msgid ""
+"Select stages to include in the report. Leave empty to include all stages."
+msgstr ""
+"Seleccione las etapas a incluir en el informe. Dejar vacío para "
+"incluir todas las etapas."
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model.fields,help:helpdesk_stage_analysis.field_helpdesk_stage_analysis_wizard__team_ids
+msgid ""
+"Select helpdesk teams to include in the report. Leave empty to include all "
+"teams."
+msgstr ""
+"Seleccione los equipos de mesa de ayuda a incluir en el informe. Dejar "
+"vacío para incluir todos los equipos."
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_stage__show_in_report
+msgid "Show in Report"
+msgstr "Mostrar en Informe"
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model.fields,help:helpdesk_stage_analysis.field_helpdesk_stage__show_in_report
+msgid ""
+"If checked, this stage will appear as a column in the Stage Analysis XLSX "
+"report. Uncheck to exclude it from the report."
+msgstr ""
+"Si está marcado, esta etapa aparecerá como columna en el informe "
+"XLSX de Análisis de Etapas. Desmarque para excluirla del informe."
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_stage_tracking__stage_id
+msgid "Stage"
+msgstr "Etapa"
+
+#. module: helpdesk_stage_analysis
+#: model:ir.actions.act_window,name:helpdesk_stage_analysis.action_stage_analysis_wizard
+#: model:ir.ui.menu,name:helpdesk_stage_analysis.menu_helpdesk_stage_analysis
+msgid "Stage Analysis"
+msgstr "Análisis de Etapas"
+
+#. module: helpdesk_stage_analysis
+#. odoo-python
+#: code:addons/helpdesk_stage_analysis/report/report_stage_analysis_xlsx.py:0
+#, python-format
+msgid "Stage Analysis"
+msgstr "Análisis de Etapas"
+
+#. module: helpdesk_stage_analysis
+#: model_terms:ir.ui.view,arch_db:helpdesk_stage_analysis.stage_analysis_wizard_view_form
+#: model:ir.actions.report,name:helpdesk_stage_analysis.action_report_stage_analysis_xlsx
+msgid "Stage Analysis Report"
+msgstr "Informe de Análisis de Etapas"
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model,name:helpdesk_stage_analysis.model_helpdesk_stage_analysis_wizard
+msgid "Stage Analysis Report Wizard"
+msgstr "Asistente de Informe de Análisis de Etapas"
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_ticket__stage_tracking_ids
+#: model_terms:ir.ui.view,arch_db:helpdesk_stage_analysis.helpdesk_stage_analysis_ticket_view_form
+msgid "Stage Tracking"
+msgstr "Seguimiento de Etapas"
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_stage_analysis_wizard__stage_ids
+msgid "Stages"
+msgstr "Etapas"
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_stage_tracking__start_date
+msgid "Start Date"
+msgstr "Fecha de Inicio"
+
+#. module: helpdesk_stage_analysis
+#. odoo-python
+#: code:addons/helpdesk_stage_analysis/report/report_stage_analysis_xlsx.py:0
+#, python-format
+msgid "Subject"
+msgstr "Asunto"
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_stage_tracking__ticket_id
+msgid "Ticket"
+msgstr "Ticket"
+
+#. module: helpdesk_stage_analysis
+#. odoo-python
+#: code:addons/helpdesk_stage_analysis/report/report_stage_analysis_xlsx.py:0
+#, python-format
+msgid "Ticket ID"
+msgstr "ID de Ticket"
+
+#. module: helpdesk_stage_analysis
+#. odoo-python
+#: code:addons/helpdesk_stage_analysis/report/report_stage_analysis_xlsx.py:0
+#, python-format
+msgid "Time \"%s\""
+msgstr "Tiempo \"%s\""
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model.fields,field_description:helpdesk_stage_analysis.field_helpdesk_ticket__total_resolution_time
+msgid "Total Resolution Time (Hours)"
+msgstr "Tiempo Total de Resolución (Horas)"
+
+#. module: helpdesk_stage_analysis
+#. odoo-python
+#: code:addons/helpdesk_stage_analysis/report/report_stage_analysis_xlsx.py:0
+#, python-format
+msgid "Total Resolution Time"
+msgstr "Tiempo Total de Resolución"
+
+#. module: helpdesk_stage_analysis
+#: model:ir.model.fields,help:helpdesk_stage_analysis.field_helpdesk_stage__auto_user_id
+msgid ""
+"User automatically assigned to tickets when they reach this stage. Leave "
+"empty to keep the current assignee."
+msgstr ""
+"Usuario asignado automáticamente a los tickets cuando llegan a esta "
+"etapa. Dejar vacío para mantener el asignado actual."
+
+#. module: helpdesk_stage_analysis
+#: model_terms:ir.ui.view,arch_db:helpdesk_stage_analysis.helpdesk_stage_analysis_stage_view_search
+msgid "Auto Assignment Configured"
+msgstr "Asignación Automática Configurada"
+
+#. module: helpdesk_stage_analysis
+#: model_terms:ir.ui.view,arch_db:helpdesk_stage_analysis.helpdesk_stage_analysis_stage_view_search
+msgid "Auto Assign User"
+msgstr "Usuario de Asignación Automática"
+
+#. module: helpdesk_stage_analysis
+#: model_terms:ir.ui.view,arch_db:helpdesk_stage_analysis.helpdesk_stage_analysis_stage_view_search
+msgid "Show in Report"
+msgstr "Mostrar en Informe"
+
+#. module: helpdesk_stage_analysis
+#: model_terms:ir.ui.view,arch_db:helpdesk_stage_analysis.helpdesk_stage_analysis_stage_view_search
+msgid "Group By"
+msgstr "Agrupar por"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_stage_analysis_xlsx" model="ir.actions.report">
+        <field name="name">Stage Analysis Report</field>
+        <field name="model">helpdesk.stage.analysis.wizard</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">helpdesk_stage_analysis.report_stage_analysis</field>
+        <field name="report_file">stage_analysis_report</field>
+        <field name="print_report_name">'stage_analysis_report'</field>
+    </record>
+</odoo>

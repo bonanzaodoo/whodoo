@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Inherit Stage Form: add auto_user_id and show_in_report -->
+    <record id="helpdesk_stage_analysis_stage_view_form" model="ir.ui.view">
+        <field name="name">helpdesk.stage.form.inherit.stage.analysis</field>
+        <field name="model">helpdesk.stage</field>
+        <field name="inherit_id" ref="helpdesk.helpdesk_stage_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='fold']" position="after">
+                <field name="auto_user_id" options="{'no_create': True}"/>
+                <field name="show_in_report"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Inherit Stage Search: add filters and group by -->
+    <record id="helpdesk_stage_analysis_stage_view_search" model="ir.ui.view">
+        <field name="name">helpdesk.stage.search.inherit.stage.analysis</field>
+        <field name="model">helpdesk.stage</field>
+        <field name="inherit_id" ref="helpdesk.helpdesk_stage_view_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search" position="inside">
+                <separator/>
+                <filter string="Show in Report" name="filter_show_in_report" domain="[('show_in_report', '=', True)]"/>
+                <filter string="Auto Assignment Configured" name="filter_auto_assignment"
+                    domain="[('auto_user_id', '!=', False)]"/>
+                <group expand="0" string="Group By">
+                    <filter string="Show in Report" name="groupby_show_in_report"
+                        context="{'group_by': 'show_in_report'}"/>
+                    <filter string="Auto Assign User" name="groupby_auto_user" context="{'group_by': 'auto_user_id'}"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
